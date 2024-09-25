@@ -5,6 +5,8 @@ let box3 = document.querySelector("#box3");
 let box4 = document.querySelector("#box4");
 let box5 = document.querySelector("#box5");
 
-box1.classList.add('pink');
 
-let makePink = 
+let makePink = () => {
+    box1.classList.add('pink');
+
+};
