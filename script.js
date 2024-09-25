@@ -22,13 +22,13 @@ let makeboxPink = (box) => {
 
 };
 
-makeboxPink(box1)
+//makeboxPink(box1)
 makePink(box3)
 
 //make a funtion that bolds thae number in any box
 
 let boldnumber = (box) => {
-    box.style.fontweight = 'bold';
+    box.style.fontWeight = 'bold';
 };
 
 boldnumber(box2);
@@ -38,10 +38,15 @@ boldnumber(box4);
 //para box: which box?
 //para color: which color?
 let colorChange = (box, color) => {
-    box.style.backgroundColor.add = color;
+    box.style.backgroundColor = color;
 };
 
 anycolor(box5, 'purple');
 
-box6.addEventListener
+box6.addEventListener('click', ()=>{
+    makeboxPink(box6);
+});
 
+box7.addEventListener('click', ()=>{
+    box7.style.display = 'none';
+});
