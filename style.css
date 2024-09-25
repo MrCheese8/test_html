@@ -3,6 +3,11 @@ html {
   width: 100%;
 }
 
+.pink {
+  background-color: pink !important;
+  
+}
+
 .column {
   width: 50%;
   float: left;
