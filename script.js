@@ -4,6 +4,7 @@ let box2 = document.querySelector("#box2");
 let box3 = document.querySelector("#box3");
 let box4 = document.querySelector("#box4");
 let box5 = document.querySelector("#box5");
+let box6 = document.querySelector("#box6");
 
 //function that turns box1 pink
 let makePink = () => {
@@ -34,9 +35,13 @@ boldnumber(box2);
 boldnumber(box4);
 
 //make a funtion that turns any box any color
-
-let anycolor = (color) => {
-    box.style.classList.add = 'purple';
+//para box: which box?
+//para color: which color?
+let colorChange = (box, color) => {
+    box.style.backgroundColor.add = color;
 };
 
-anycolor(box5);
+anycolor(box5, 'purple');
+
+box6.addEventListener
+
