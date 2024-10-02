@@ -1,53 +1,16 @@
-//TASK 2
-let box1 = document.querySelector("#box1");
-let box2 = document.querySelector("#box2");
-let box3 = document.querySelector("#box3");
-let box4 = document.querySelector("#box4");
-let box5 = document.querySelector("#box5");
-let box6 = document.querySelector("#box6");
-let box7 = document.querySelector("#box7");
+let text = document.querySelector('#text');
+let submit = document.querySelector('#submit');
+let message = document.querySelector('#message');
+let timer = document.querySelector('#timer');
 
-//function that turns box1 pink
-let makePink = () => {
-    box1.classList.add('pink');
+submit.addEventListener('click',() => {
+    console.log('clicked submit')
+    let correctPassword = "password123";
 
-};
+    if (correctPassword === text.value) {
+        message.textContent = "Nice!";
+    } else {
+        message.textContent = "Wrong!";
+    }
 
-//makePink();
-
-
-//funtion that turns any box pink 
-//parm box: which box am I turning pink?
-let makeboxPink = (box) => {
-    box.classList.add('pink');
-
-};
-
-//makeboxPink(box1)
-makePink(box3)
-
-//make a funtion that bolds thae number in any box
-
-let boldnumber = (box) => {
-    box.style.fontWeight = 'bold';
-};
-
-boldnumber(box2);
-boldnumber(box4);
-
-//make a funtion that turns any box any color
-//para box: which box?
-//para color: which color?
-let colorChange = (box, color) => {
-    box.style.backgroundColor = color;
-};
-
-anycolor(box5, 'purple');
-
-box6.addEventListener('click', ()=>{
-    makeboxPink(box6);
-});
-
-box7.addEventListener('click', ()=>{
-    box7.style.display = 'none';
 });
